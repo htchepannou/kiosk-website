@@ -1,11 +1,10 @@
 body {
     /* background-image: url('../img/bg-kiosk.jpg') !important; */
-    background: #f0f0f0;
+    background: #36465d;
 }
 
-header h1 {
-    color: #36465d !important;
-    text-shadow: 2px 2px #c8c8c8;
+header {
+    color: #fff !important;
 }
 
 .navbar-brand {
