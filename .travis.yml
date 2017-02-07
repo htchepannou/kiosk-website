@@ -1,8 +1,11 @@
 script:
   - mkdir target
-  - cp -R * target/.
-  - rm target/*.yml
-  - rm -Rf target/.gitignore
+  - mkdir target/html
+  - cp *.html target/html
+  - cp -R css target/html
+  - cp -R img target/html
+  - cp -R js target/html
+  - cp -R vendor target/html
 
 notifications:
   email:
@@ -12,7 +15,7 @@ deploy:
   - provider: s3
     access_key_id: "$AWS_ACCESS_KEY"
     secret_access_key: "$AWS_SECRET_KEY"
-    bucket: "io.tchepannou.kribi"
+    bucket: "io.tchepannou.kiosk.website"
     skip_cleanup: true
     local_dir: target/html
     on:
