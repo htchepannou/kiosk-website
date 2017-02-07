@@ -1,5 +1,6 @@
 body {
-    background-image: url('../img/bg-kiosk.jpg') !important;
+    /* background-image: url('../img/bg-kiosk.jpg') !important; */
+    background: #f0f0f0;
 }
 
 header h1 {
